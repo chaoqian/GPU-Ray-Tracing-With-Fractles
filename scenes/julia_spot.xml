@@ -1,0 +1,66 @@
+<scenefile>
+    <globaldata>
+		<diffusecoeff v="0.5"/>
+		<specularcoeff v="0.5"/>
+		<ambientcoeff v="0.5"/>
+	</globaldata>
+
+	<cameradata>
+		<pos x="-4" y="3" z="3"/>
+		<up x="0" y="1" z="0"/>
+		<focus x="0" y="0" z="0"/>
+		<heightangle v="30"/>
+	</cameradata>
+
+	<lightdata>
+		<id v="0"/>
+		<color r="0.3" g="0.3" b="0.3"/>
+        <position x="0" y="10" z="0"/>
+        <function v1="1.5" v2="0" v3="0"/>
+    </lightdata>
+
+    <lightdata>
+	<id v="1"/>
+	<type v="spot"/>
+	<penumbra v="20"/>
+	<color r="0.6" g="0.6" b="0.6"/>
+	<position x="1" y="4" z="0"/>
+	<direction x="-.25" y="-1" z="0"/>
+	<function v1="1" v2="0" v3="0"/>
+    </lightdata>
+
+    <lightdata>
+	<id v="2"/>
+	<type v="spot"/>
+	<penumbra v="80"/>
+	<color r="0.8" g="0.8" b="0.8"/>
+	<position x="-2" y="4" z="0"/>
+	<direction x=".5" y="-1" z="0"/>
+	<function v1="1" v2="0" v3="0"/>
+    </lightdata>
+
+    <object type="tree" name="root">
+        <transblock>
+            <rotate x="0" y="1" z="0" angle="-45"/>
+            <object type="primitive" name="julia" >
+				<reflective r="1.0" g="1.0" b="1.0"/>
+				<diffuse r="0.6" g="0.2" b="0.2"/>
+				<shininess v="50"/>
+				<specular r="1.0" g="1.0" b="1.0"/>
+                                <texture file="D:\QTProjects\qt-last-last-show!!\scenes\image\haunted.jpg" u="1" v="1"/>
+				<blend v="0.5"/>
+			</object>
+		</transblock>  
+		<transblock>
+			<translate x="0" y="-0.6" z="0"/>
+			<scale x="6" y="0.2" z="6"/>
+			<object type="primitive" name="cube" >
+                                <texture file="D:\QTProjects\qt-last-last-show!!\scenes\image\circuit.png" u="1" v="1"/>
+				<diffuse r="1" g="1" b="0.5"/>
+				<blend v="0.8"/>
+			</object>
+		</transblock>
+	</object>
+
+</scenefile>
+

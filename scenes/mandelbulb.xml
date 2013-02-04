@@ -1,0 +1,52 @@
+<scenefile>
+	<globaldata>
+		<diffusecoeff v="0.5"/>
+		<specularcoeff v="0.5"/>
+		<ambientcoeff v="0.5"/>
+	</globaldata>
+
+	<cameradata>
+		<pos x="0" y="0" z="3"/>
+		<up x="0" y="1" z="0"/>
+		<focus x="0" y="0" z="0"/>
+		<heightangle v="45"/>
+	</cameradata>
+
+	<lightdata>
+		<id v="0"/>
+		<color r="0.5" g="0.5" b="0.5"/>
+		<function v1="1" v2="0" v3="0"/>
+		<position x="10" y="10" z="10"/>
+	</lightdata>
+
+	<lightdata>
+		<id v="1"/>
+		<color r="0.8" g="0.8" b="0.8"/>
+		<function v1="1" v2="0" v3="0"/>
+		<position x="-2" y="-2" z="2"/>
+	</lightdata>
+
+	<object type="tree" name="root">
+		<transblock>
+			<object type="primitive" name="mandelbulb" >
+			    <reflective r="1.0" g="1.0" b="1.0"/>
+				<diffuse r="1" g="1" b="1"/>
+				<shininess v="50"/>
+				<specular r="1.0" g="1.0" b="1.0"/>
+                                <texture file="D:\QTProjects\qt-last-last-show!!\scenes\image\space_red.jpg" u="1" v="1"/>
+				<blend v="1.0"/>
+			</object>
+        </transblock>
+        <transblock>
+	    <scale x="6" y="4" z="1"/>
+	    <translate x="0" y = "0" z="-1"/>
+	    <object type="primitive" name="cube" >
+            <texture file="D:\QTProjects\qt-last-last-show!!\scenes\image\brightest_stars.jpg" u="1" v="1"/>
+               <diffuse r="1" g="1" b="0.5"/>
+               <blend v="0.8"/>
+	    </object>
+	    </transblock>
+	</object>
+
+</scenefile>
+
